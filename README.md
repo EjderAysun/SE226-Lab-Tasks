@@ -47,11 +47,11 @@ The main objective of this course is to **improve programming skills** of studen
 
 ---
 ## Status
-In progress; tasks, related documents, and solutions will be added almost weekly until the end of the 2023 Spring semester, and past documents will be updated if necessary.
+In progress; tasks, related documents, and solutions will be added almost weekly until the end of the 2023 Spring Semester, and past documents will be updated if necessary.
 
 ---
 ## Inspiration
-Software Engineering 226 (SE 226) LAB Instructions (Izmir University of Economics, 2023, SE 226 course, Spring semester laboratory tasks)
+Software Engineering 226 (SE 226) LAB Instructions (Izmir University of Economics, 2023, SE 226 course, Spring Semester laboratory tasks)
   
 As a student of the Izmir University of Economics, I made these tasks in accordance with the SE 226 laboratory tasks instructions for the spring semester laboratory tasks of the SE 226 course in 2023.
   
@@ -61,17 +61,17 @@ I share documents publicly. The contents of the SE 226 projects that will be giv
 
 ---
 ## Version
-~~07/03/2023 LAB#1~~  
-~~14/03/2023 LAB#2~~  
-DD/MM/YYYY LAB#3  
-DD/MM/YYYY LAB#4  
-DD/MM/YYYY LAB#5  
-DD/MM/YYYY LAB#6  
-DD/MM/YYYY LAB#7  
-DD/MM/YYYY LAB#8  
-DD/MM/YYYY LAB#9  
-DD/MM/YYYY LAB#10  
-...
+~~07/03/2023 LAB#1: First C++ and Python program (get input, process, print out)~~  
+~~14/03/2023 LAB#2: Selection + looping (C++ and Python)~~  
+21/03/2023 LAB#3: Implementing a linked list (searching, merging two lists, adding/deleting a node) (hw: stack) (C++)  
+28/03/2023 LAB#4: Implementing a set or dictionary (Python)  
+04/04/2023 LAB#5: Functions (Basics) (C++ and Python)  
+14/04/2023 LAB#6: Functions (on sets, lists or stacks) (C++ and Python)  
+25/04/2023 LAB#7: Accessing to a well-known module of image processing or natural language processing (Python)  
+02/05/2023 LAB#8: Classes and Objects in Python  
+09/05/2023 LAB#9: Reading a file, searching, updating the file (C++ and Python)  
+16/05/2023 LAB#10: Access to a database, sending query and printing out the output (C++ and Python)  
+23/05/2023 LAB#11: GUI in C++ (or C#) and Python  
 
 ---
 ## Contributors
@@ -82,6 +82,8 @@ DD/MM/YYYY LAB#10
 - C++ How to Program, 10/E Deitel & Deitel©2015 ISBN-10: 9780134448237  
 - SE 226 Theory Lessons  
 - SE 226 Lab Lessons  
+- SE 226 assignments and homeworks
+- SE 226 lecture documentations (slides, images, etc.)
 
 ---
 ## Licence & Copyright
