@@ -65,17 +65,21 @@ I share documents publicly. The contents of the SE 226 projects that will be giv
 ~~07/03/2023 LAB#1: First C++ and Python program (get input, process, print out)~~  
 ~~14/03/2023 LAB#2: Selection + looping (C++ and Python)~~  
 ~~21/03/2023 LAB#3: Implementing a queue using a linked list (adding/deleting a node, getting the top element, checking empty or not, getting size) (hw: stack) (C++)~~ (will be improved and detailed)  
-28/03/2023 LAB#4: Implementing a set or dictionary (Python)  
-04/04/2023 LAB#5: Functions (Basics) (C++ and Python)  
-14/04/2023 LAB#6: Functions (on sets, lists or stacks) (C++ and Python)  
-25/04/2023 LAB#7: Accessing to a well-known module of image processing or natural language processing (Python)  
-02/05/2023 LAB#8: Classes and Objects in Python  
-09/05/2023 LAB#9: Reading a file, searching, updating the file (C++ and Python)  
-16/05/2023 LAB#10: Access to a database, sending query and printing out the output (C++ and Python)  
-23/05/2023 LAB#11: GUI in C++ (or C#) and Python  
+28/03/2023 LAB#3.5: What we have learned so far?  
+~~04/04/2023 LAB#4: Understanding Python data structures.~~ (will be improved and detailed)  
+25/04/2023 LAB#6: Functions (on sets, lists or stacks) (C++ and Python)  
+02/05/2023 LAB#7: Accessing to a well-known module of image processing or natural language processing (Python)  
+09/05/2023 LAB#8: Classes and Objects in Python  
+16/05/2023 LAB#9: Reading a file, searching, updating the file (C++ and Python)  
+23/05/2023 LAB#10: Access to a database, sending query and printing out the output (C++ and Python)  
+30/05/2023 (?) LAB#11: GUI in C++ (or C#) and Python  
 
 #### Changed: 
-Old LAB#3 "Implementing a linked list (searching, merging two lists, adding/deleting a node) (hw: stack) (C++)" mission is changed with new LAB#3.
+- Old LAB#3 "Implementing a linked list (searching, merging two lists, adding/deleting a node) (hw: stack) (C++)" mission is changed with new LAB#3.  
+- Old Lab#4 "Implementing a set or dictionary (Python)" mission is changed with new LAB#4.  
+
+#### Added:
+- LAB#3.5 "What we have learned so far?" mission is added.  
 
 ---
 ## Contributors
