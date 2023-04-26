@@ -1,30 +1,25 @@
 #include <iostream>
 #include <list>
 #include <algorithm>
-#include <typeinfo>
-#include <string>
+#include <set>
+#include <numeric>
+#include <sstream>
 
 using namespace std;
 
 // helper methods //
-void printIntList(list<int> list) {
-    string result = "{";
-    for (int it : list) {
-        result += to_string(it) + ", ";
+template <typename T>
+void printList(list<T> list) {
+    stringstream ss;
+    ss << "{";
+    for (const T& item : list) {
+        ss << item << ", ";
     }
-    // result.erase(result.size()-2);
+    string result = ss.str();
+    int ssSize = result.size();
+    if(ssSize > 2) result.erase(ssSize - 2);
     result += "}";
-    cout<<result<<endl;
-}
-
-void printStrList(list<string> list) {
-    string result = "{";
-    for (string it : list) {
-        result += it + ", ";
-    }
-    // result.erase(result.size()-2);
-    result += "}";
-    cout<<result<<endl;
+    cout << result << endl;
 }
 
 string toLower(string str) {
@@ -41,6 +36,11 @@ string reverse(string str) {
         swap(str[i], str[n - i - 1]);
     }
     return str;
+}
+
+string extractMultipleLetters(string sortedWord) {
+    set<char> charSet(sortedWord.begin(), sortedWord.end());
+    return accumulate(charSet.begin(), charSet.end(), string());
 }
 
 // task 1 //
@@ -61,6 +61,7 @@ list<int> findCommonElements2(list<int> aList1, list<int> aList2) {
 }
 
 // task 2 //
+// Any string containing just one letter is by default a palindrome.
 list<string> palindrom1(list<string> strings) {
     list<string> returnList;
     for(string i : strings) {
@@ -83,16 +84,58 @@ list<string> palindrom2(list<string> strings) {
     return returnList;
 }
 
+// task 3 //
+// The Sieve of Eratosthenes is valid for consecutive numbers from 2 to n.
+list<int> sieveOfEratosthenes(list<int> numList) {
+    list<int> primes = numList;
+    primes.sort();
+    int p = 2;
+    int size = primes.size() - 1;
+    while(p * p <= size) {
+        list<int> primesSubList(next(primes.begin(), p - 1), primes.end());
+        for(int item : primesSubList) {
+            if (item % p == 0) primes.remove(item);
+        }
+        p += 1;
+    }
+    return primes;
+}
+
+// task 4 //
+list<string> anagrams(string word, list<string> wordList) {
+    list<string> anagramList;
+    word = extractMultipleLetters(toLower(word));
+    for (int i = 0; i <= wordList.size()-1; i++) {
+        string extractedMultipleLettersWord = extractMultipleLetters(toLower(*next(wordList.begin(), i)));
+        if(word == extractedMultipleLettersWord) {
+            anagramList.push_back(*next(wordList.begin(), i));
+        }
+    }
+    return anagramList;
+}
+
 int main() {
     // task 1 //
     list<int> list1 = {1,2,3,4,5,6};
     list<int> list2 = {3,4,5,7,8,9,0};
-    printIntList(findCommonElements1(list1, list2));
+    printList(findCommonElements1(list1, list2));
     // or
-    printIntList(findCommonElements2(list1, list2));
+    printList(findCommonElements2(list1, list2));
 
     // task 2 //
     list<string> strings = {"rotator", "wow", "noon", "civic", "level", "Bob", "Ross", "Tenet", "a"};
-    printStrList(palindrom1(strings));
-    printStrList(palindrom2(strings));
+    printList(palindrom1(strings));
+    // or
+    printList(palindrom2(strings));
+
+    // task 3 //
+    list<int> numList = {2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,24,25,26,27,28,29,30};
+    printList(sieveOfEratosthenes(numList));
+
+    // task 4 //
+    list<string> wordList = {"enlists", "google", "inlets", "banana"};
+    string word = "listen";
+    printList(anagrams(word, wordList));
+    
+    return 0;
 }
