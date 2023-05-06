@@ -61,7 +61,7 @@ struct Queue {
         int size = 0;
         QNode* temp = front;
         while (temp != NULL) {  // If queue is empty, size is 0.
-            // If the queue is not empty, 1 is added to\
+            // If the queue is not empty, 1 is added to \
             the size variable for each data until the temp is NULL.
             size ++;  
             temp = temp->next;
@@ -69,8 +69,28 @@ struct Queue {
         return size;
     }
 
+    // LAB 3.5 CPP start//
+    void reverse() {
+        if (front == NULL) return; // do not process for empty queue
+        QNode* current = front;
+        QNode* prev = NULL;
+        QNode* next = NULL;
+        rear = front; // The rear node becomes a front node.
+        while (current != NULL) {
+            // Save next node.
+            next = current->next;
+            // Set the next value of the current node as the previous node.
+            current->next = prev;
+            // Move previous and current nodes to the next step.
+            prev = current;
+            current = next;
+        }
+        front = prev; // Let the front node point to the last node.
+    }
+    // LAB 3.5 CPP end //
+    
     // *******************************
-    // non-task but helper methods:
+    // non-task but helper methods: //
     
     void Display() {
         QNode* temp = front;
@@ -94,8 +114,9 @@ struct Queue {
     }
 };
 
-// Test area
+// Test area //
 int main() {
+    cout<<"*****"<<endl;
     Queue q;
     q.Display();
     cout<<"is empty: "<<boolalpha<<q.isEmpty()<<endl;
@@ -109,7 +130,6 @@ int main() {
     q.deQueue();
     q.deQueue();
     q.Display();
-
     q.check(q);
 
     q.deQueue();
@@ -118,7 +138,10 @@ int main() {
     q.enQueue(35);
     q.enQueue(5);
     q.Display();
+    q.check(q);
 
+    q.reverse();
+    q.Display();
     q.check(q);
 
     return 0;
