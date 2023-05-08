@@ -13,11 +13,11 @@ int main() {
     cout<<"What is yoru surname? ";
     cin>>surname;
 
-    // When using the "cin" method it only takes the value up to the first space of the first line.
-    // We can solve this problem as "getline(cin, name)".
-    // However, since we were told not to go beyond what was explained in the lesson while solving laboratory tasks,
-    // I first took only the name and then only the surname.
-    // After that, I combined the name and surname I got from the user and printed it on the screen.
+    // When using the "cin" method it only takes the value up to the first space of the first line. \
+    We can solve this problem as "getline(cin, name)". \
+    However, since we were told not to go beyond what was explained in the lesson while solving laboratory tasks, \
+    I first took only the name and then only the surname. \
+    After that, I combined the name and surname I got from the user and printed it on the screen.
 
     cout<<"What is your lab grade? ";
     cin>>lab_grade;

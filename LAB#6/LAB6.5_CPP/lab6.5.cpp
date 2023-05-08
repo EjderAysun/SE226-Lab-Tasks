@@ -114,6 +114,7 @@ list<string> anagrams(string word, list<string> wordList) {
     return anagramList;
 }
 
+// test //
 int main() {
     // task 1 //
     list<int> list1 = {1,2,3,4,5,6};

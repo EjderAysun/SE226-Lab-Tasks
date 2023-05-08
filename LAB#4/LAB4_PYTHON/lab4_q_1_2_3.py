@@ -4,7 +4,8 @@ words = ["a","ability","able","about","above","accept","according","account","ac
 # Note: It is assumed that all inputs are entered as a number in or out of the given range.
 
 print("----------first task----------")
-# task 1
+# task 1 #
+
 while(True):
     smaller_number = int(input("Please enter a number between 1 and 999 (inclusive 1 and 999): "))
     if(smaller_number >= 1 and smaller_number <= 999):
@@ -28,7 +29,8 @@ for i in range(smaller_number, greater_number):
 '''
 
 print("----------second task----------")
-# task 2
+# task 2 #
+
 while(True):
     user_number = int(input("Please enter a number between 3 and 7 (inclusive 3 and 7): "))
     if(user_number >= 3 and user_number <= 7):
@@ -37,19 +39,19 @@ while(True):
         print("Invalid input.")
 
 # If you want the indexes of selected items to be unique you can try the following method:
-# Warning: The same index is returned maximum 1 time, but if there are identical elements in different indexes,
+# Warning: The same index is returned maximum 1 time, but if there are identical elements in different indexes, \
 # there is a possibility that the same elements will be returned. Only the index is returned as unique.
 '''
 event = random.sample(slice, user_number)
 '''
 
-# If it doesn't matter if the indexes of the selected items are unique 
+# If it doesn't matter if the indexes of the selected items are unique \
 # (i.e. the same index is allowed to be returned multiple times), you can try the following method:
 event = random.choices(sample_space, k = user_number)
-# In the task, no information is given about whether the same element can be repeated or not,
-# only how many words we need to randomly select.
-# In addition, provided that x is less than 7 if the user creates a sample space with x elements and
-# wants to select a number of words greater than x, the same index will need to be selected one or more times.
+# In the task, no information is given about whether the same element can be repeated or not, \
+# only how many words we need to randomly select. \
+# In addition, provided that x is less than 7 if the user creates a sample space with x elements and \
+# wants to select a number of words greater than x, the same index will need to be selected one or more times. \
 # Therefore, the same word can be selected more times than once. That's why I'm using the above.
 
 # Traditionally we can create the list also using a “for loop”:
@@ -72,7 +74,8 @@ for i in event:
 print("Password: %s" %password)
 
 print("----------third task----------")
-# task 3
+# task 3 #
+
 shorter_set = set()
 longer_set = set()
 
@@ -97,7 +100,7 @@ for i in range(0, 8):
     else:
         longer_set.add(password)
 
-# There cannot be 2 of the same elements in a set, and if the two combined sets have the same element,
+# There can not be 2 of the same elements in a set, and if the two combined sets have the same element, \
 # it is written to the union set once. So technically there is a probability of 1 to 8 items in the "password_set" set.
 password_set = longer_set.union(shorter_set)
 print("Password set: %s" %password_set)
