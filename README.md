@@ -12,7 +12,7 @@ For more information about the course, see here:
   * [Features](#features)
   * [Status](#status)
   * [Inspiration](#inspiration)
-  * [Version](#version)
+  * [Schedule](#schedule)
   * [Contributors](#contributors)
   * [Licence & Copyright](#licence--copyright)
 
@@ -60,8 +60,7 @@ The repo conforms almost exactly to the document. It is highly personalized.
 I share documents publicly. The contents of the SE 226 projects that will be given in the future may be similar to this document. If you have an ethical responsibility based on this or a similar course, assignment, or task, please use this as an opinion only. If you have a question or need more information about the solutions, send an email to me: <ejderaysunn@gmail.com>
 
 ---
-## Version
-#### Schedule:
+## Schedule:
 07/03/2023 LAB#1: Understanding basic input/output operations; the use of variables and arithmetic operators (C++ and Python)  
 14/03/2023 LAB#2: Flow control: selection statements, looping statements (C++ and Python)  
 21/03/2023 LAB#3: Implementing a queue using a linked list (adding/deleting a node, getting the top element, checking empty or not, getting size) (hw: stack) (C++)  
