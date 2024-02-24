@@ -76,10 +76,13 @@ I share documents publicly. The contents of the SE 226 projects that will be giv
 ---
 ## Contributors
 - for theory: SE 226 Course Coordinator and Course Lecturer, [Assoc. Prof. Senem KUMOVA METİN](https://people.ieu.edu.tr/en/senemkumovametin/main)  
-- for lab: SE 226Course Assistant, [Res. Asst. Erdem Okur](https://people.ieu.edu.tr/en/erdemokur/main)  
+- for lab: SE 226 Course Assistant, [Dr. Lect. Member Erdem OKUR](https://people.ieu.edu.tr/en/erdemokur/main)  
 - Ejder Aysun <ejderaysunn@gmail.com>  
 - Python for Everybody: Exploring Data in Python 3, Charles Severance, CreateSpace Independent Publishing Platform, 978-1530051120  
 - C++ How to Program, 10/E Deitel & Deitel©2015 ISBN-10: 9780134448237  
+- Python Programming Fundamentals, Kent D. Lee, ISBN 978-1-4471-6642-9  
+- Interactive Python Tutorial https://www.learnpython.org  
+- The Python Language Reference https://docs.python.org/3/reference/index.html  
 - SE 226 Theory Lessons  
 - SE 226 Lab Lessons  
 - SE 226 assignments and homeworks
