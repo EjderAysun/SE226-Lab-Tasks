@@ -287,7 +287,7 @@ I have made some unusual movements while extracting the data from the given marv
 file to avoid making any manual changes. (as an example, line [73-75]).
 
 The 7 hour development process is over,
-now I'm going to get some sleep and then I'll develop detailed comment lines.
+now I'm going to get some sleep and then I'll develop detailed comment lines :)
 
 And please do not forget to fill in the fields with question marks (line [7-9] and [19-22]).
 '''
